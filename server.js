@@ -22,6 +22,6 @@ http
 
         response.end(JSON.stringify({
             message: "Qualquer outra rota",
-        }))
+        }));
 
 }).listen(4001, () => console.log("Servidor está rodando na porta 4001"));
