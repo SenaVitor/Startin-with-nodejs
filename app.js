@@ -59,7 +59,6 @@ app.get("/products/:id", (request, response) => {
 app.put("/products/:id", (request, response) => {
     const { id } = request.params;
     const { name, price } = request.body;
-    console.log("nome: " + name + " preço: " + price);
     const productIndex = products.findIndex((product) => product.id === id);
     products[productIndex] = {
         ...products[productIndex],

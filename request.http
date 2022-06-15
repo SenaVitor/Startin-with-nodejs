@@ -2,8 +2,8 @@ POST http://localhost:4002/products
 content-type: application/json
 
 {
-    "name": "Borracha cara",
-    "price": 10.00
+    "name": "Borracha barata",
+    "price": 0.50
 }
 
 ###
@@ -12,11 +12,12 @@ GET http://localhost:4002/products
 
 ###
 
-GET http://localhost:4002/products/08aa2d7b-e5f9-479a-b88e-aca6f0ff31b8
+GET http://localhost:4002/products/fc9c36be-5edf-424c-8370-51f2b6721848
 
 ###
 
-PUT http://localhost:4002/products/19b69781-f5cc-4150-8210-8b15e64115dd
+PUT http://localhost:4002/products/fc9c36be-5edf-424c-8370-51f2b6721848
+content-type: application/json
 
 {
     "name": "Borracha de luxo",
@@ -25,4 +26,4 @@ PUT http://localhost:4002/products/19b69781-f5cc-4150-8210-8b15e64115dd
 
 ###
 
-DELETE http://localhost:4002/products/136c0c32-06fe-47d0-a0b4-0bf2688b824f
+DELETE http://localhost:4002/products/425238c7-8148-4376-ab29-758ab88e078e
