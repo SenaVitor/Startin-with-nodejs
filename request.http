@@ -2,8 +2,8 @@ POST http://localhost:4002/products
 content-type: application/json
 
 {
-    "name": "Cachaça",
-    "price": 12
+    "name": "Borracha",
+    "price": 2.00
 }
 
 ###
@@ -12,8 +12,17 @@ GET http://localhost:4002/products
 
 ###
 
-GET http://localhost:4002/products/acad3488-3b69-41c2-963b-512d38e3ce8e
+GET http://localhost:4002/products/12ec951b-6238-439d-a22a-81b745120fd0
 
 ###
 
-GET http://localhost:4002/products/471f3a7d-464c-47fd-b2f1-b7e1a5dd34bf
+PUT http://localhost:4002/products/12ec951b-6238-439d-a22a-81b745120fd0
+content-type: application/json
+
+{
+    "name": "Borracha",
+    "price": 0.5
+}
+
+###
+DELETE http://localhost:4002/products/12ec951b-6238-439d-a22a-81b745120fd0
